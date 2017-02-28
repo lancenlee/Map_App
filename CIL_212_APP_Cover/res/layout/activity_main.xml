@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/linerlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/main_android"
+                android:layout_width="49dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/android" />
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#C0C0C0" >
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/main_java"
+                android:layout_width="49dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/java_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#C0C0C0" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="bottom"
+                    android:background="#20000000"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="3dip"
+                        android:text="这是标题"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:id="@+id/dot1"
+                            android:layout_width="5dip"
+                            android:layout_height="5dip"
+                            android:layout_marginLeft="3dip"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/dot_focused" />
+
+                        <View
+                            android:id="@+id/dot2"
+                            android:layout_width="5dip"
+                            android:layout_height="5dip"
+                            android:layout_marginLeft="3dip"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/dot_normal" />
+
+                        <View
+                            android:id="@+id/dot3"
+                            android:layout_width="5dip"
+                            android:layout_height="5dip"
+                            android:layout_marginLeft="3dip"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/dot_normal" />
+
+                        <View
+                            android:id="@+id/dot4"
+                            android:layout_width="5dip"
+                            android:layout_height="5dip"
+                            android:layout_marginLeft="3dip"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/dot_normal" />
+
+                        <View
+                            android:id="@+id/dot5"
+                            android:layout_width="5dip"
+                            android:layout_height="5dip"
+                            android:layout_marginLeft="3dip"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/dot_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#C0C0C0" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="270dp"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/main_c"
+                android:layout_width="49dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/c_" />
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#C0C0C0" >
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/main_html"
+                android:layout_width="49dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/html_4" />
+        </LinearLayout>
+    </TableLayout>
+
+</LinearLayout>
