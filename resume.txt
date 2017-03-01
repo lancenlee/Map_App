@@ -1,0 +1,5 @@
+此App为山东理工大学——计算机学院——CIL实验室——Android团队（李诗毅、王刚）创作
+
+? 运用 BaiduMapAndroid SDK, 使用其中的 GetPoint 得到经纬度，getLastKnownLocation() 方法得到 当前位置的功能
+? 运用 FloatingActionButton 实现悬浮按钮操作按钮的功能 
+? 运用 LinearLayout,TextView,EditText 的布局设计，实现了登录界面的功能
